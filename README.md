@@ -6,7 +6,6 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
 1. **CycleGAN** pour la restauration structurelle globale.  
 2. **Stable Diffusion (img2img)** pour le raffinement des textures et du réalisme.
 
----
 
 ## 🚀 Guide d'exécution (Kaggle)
 
@@ -15,7 +14,6 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
 - **Accélérateur :** Activer **T4 x2**  
   *(Settings → Accelerator)*
 
----
 
 ### 2. Dataset (LHQ)
 - Utiliser le **Landscapes dataset (LHQ 1024×1024)**.
@@ -23,20 +21,18 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
   `/kaggle/working/project/data/B_healthy_filtered`
 - Le notebook gère automatiquement le redimensionnement en **256×256** pour l'entraînement.
 
----
 
-### ⚠️ 3. Ordre d’exécution des cellules (IMPORTANT)
+### 3. Ordre d’exécution des cellules (IMPORTANT)
 
-⚠️ **Le notebook doit être exécuté STRICTEMENT de manière séquentielle.**
+ **Le notebook doit être exécuté STRICTEMENT de manière séquentielle.**
 
 - Chaque cellule dépend des résultats de la cellule précédente.
 - Sauter une cellule ou modifier l’ordre d’exécution entraînera des erreurs.
 
-✅ Méthodes recommandées :
+Méthodes recommandées :
 - Cliquer sur **Run All**
 - Ou exécuter les cellules **une par une, dans l’ordre**
 
----
 
 ### 4. Workflow du Pipeline
 - **Entraînement :**  
@@ -47,7 +43,6 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
 - **Raffinement :**  
   La diffusion transforme les sorties du GAN en paysages plus réalistes visuellement.
 
----
 
 ### 5. Évaluation
 - **Métriques utilisées :**
@@ -57,7 +52,6 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
 - **Note importante :**  
   Les résultats montrent une amélioration visuelle nette, malgré un compromis possible sur les métriques de distorsion classiques.
 
----
 
 ### 👤 Auteurs
 - **AGUERCHI Saida**
@@ -66,3 +60,4 @@ Ce dépôt contient un notebook exécutable permettant de restaurer des images d
 
 ### 🎓 Institution
 Université Cadi Ayyad – Morocco
+
